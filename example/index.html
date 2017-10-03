@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>SVG Fallback Example</title>
+    </head>
+
+    <link rel="stylesheet" href="https://unpkg.com/nanoreset/nanoreset.min.css">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        img {
+            height: 30%;
+            width: 30%;
+        }
+
+    
+    </style>
+    <body>
+        <img src="internet.svg" alt="">
+
+        <script src="../dist/svg-fallback.min.js"></script>
+        <script>
+            svgFallback({
+                type: 'png', // Type of image to replace with
+                ignore: '', // Element with this class name will be ignored
+                dev: true // If true, will always replace svg. Used for dev
+            })
+        </script>
+    </body>
+</html>

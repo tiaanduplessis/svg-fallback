@@ -1,0 +1,40 @@
+{
+  "name": "svg-fallback",
+  "version": "1.0.0",
+  "description": "Image fallback for when SVG ain't a thing",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/tiaanduplessis/svg-fallback",
+    "type": "git"
+  },
+  "homepage": "https://github.com/tiaanduplessis/svg-fallback",
+  "bugs": "https://github.com/tiaanduplessis/svg-fallback",
+  "main": "dist/svg-fallback.js",
+  "browser": "dist/svg-fallback.js",
+  "module": "dist/svg-fallback.es.js",  
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest",
+    "format": "prettier-standard 'src/**/*.js'",
+    "build": "bili",
+    "start": "npm run test",
+    "precommit": "npm test",
+    "prepublish": "npm run build",
+    "pretest": "npm run format"
+  },
+  "author": "tiaanduplessis <tiaanduplessis@hotmail.com>",
+  "babel": {
+    "presets": [
+      ["env"]
+    ]
+  },
+  "devDependencies": {
+    "jest": "^21.0.2",
+    "husky": "^0.14.3", 
+    "babel-preset-env": "^1.6.0",
+    "bili": "^0.18.1",
+    "prettier-standard": "^6.0.0"
+  }
+}
