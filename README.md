@@ -55,6 +55,8 @@
 
 ## Install
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/svg-fallback.svg)](https://greenkeeper.io/)
+
 ```sh
 $ npm install svg-fallback
 # OR
